@@ -48,13 +48,13 @@ print(low)
 import matplotlib.pyplot as plt
 
 plt.subplot(2,1,1)
-plt.plot(dates, low, c='blue')
-plt.plot(dates, high, c='red')
+plt.plot(dates, low, c='blue', alpha = 0.5)
+plt.plot(dates, high, c='red', alpha = 0.5)
 plt.title('Sitka')
 
 plt.subplot(2,1,2)
-plt.plot(dates, low, c='blue')
-plt.plot(dates, high, c='red')
+plt.plot(dates, low, c='blue', alpha = 0.5)
+plt.plot(dates, high, c='red', alpha = 0.5)
 plt.title('Death Valley')
 
 plt.suptitle('Temperatures of Sitka and Death Valley')
