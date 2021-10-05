@@ -59,13 +59,16 @@ fig = plt.figure()
 plt.subplot(2,1,1)
 plt.plot(dates, lows, c='blue', alpha = 0.5)
 plt.plot(dates, highs, c='red', alpha = 0.5)
+plt.fill_between(dates, highs, lows, facecolor = 'blue', alpha = 0.1)
 plt.title('Sitka')
 
 plt.subplot(2,1,2)
 plt.plot(dates2, lows2, c='blue', alpha = 0.5)
 plt.plot(dates2, highs2, c='red', alpha = 0.5)
+plt.fill_between(dates2, highs2, lows2, facecolor = 'blue', alpha = 0.1)
 plt.title('Death Valley')
 
 plt.suptitle('Temperatures of Sitka and Death Valley')
 
+fig.autofmt_xdate()
 plt.show()
