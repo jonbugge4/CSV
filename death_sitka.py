@@ -56,6 +56,12 @@ import matplotlib.pyplot as plt
 
 fig = plt.figure()
 
+plt.xlabel("",fontsize = 12)
+plt.ylabel("Temperature (F)", fontsize = 12)
+plt.tick_params(axis='both',which = 'major', labelsize=12)
+
+
+
 plt.subplot(2,1,1)
 plt.plot(dates, lows, c='blue', alpha = 0.5)
 plt.plot(dates, highs, c='red', alpha = 0.5)
