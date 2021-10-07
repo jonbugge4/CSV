@@ -41,16 +41,16 @@ for row in csv_file2:
         print(f"missing data for {the_date}")
         #allows us to incorporate variables directly into statements^^ "f string method"
     else:
-        highs.append(high)
-        lows.append(low)
-        dates.append(the_date)
+        highs2.append(high)
+        lows2.append(low)
+        dates2.append(the_date)
 
-print(high)
-print(dates)
-print(low)
-print(highs2)
-print(dates2)
-print(lows2)
+print(highs[:5])
+print(dates[:5])
+print(lows[:5])
+print(highs2[:5])
+print(dates2[:5])
+print(lows2[:5])
 
 import matplotlib.pyplot as plt
 

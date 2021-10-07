@@ -33,7 +33,7 @@ print(high)
 print(dates)
 print(low)
 
-'''
+
 
 import matplotlib.pyplot as plt
 
@@ -44,9 +44,9 @@ plt.xlabel("",fontsize = 12)
 plt.ylabel("Temperature (F)", fontsize = 12)
 plt.tick_params(axis='both',which = 'major', labelsize=12)
 
-plt.plot(dates, high, c= 'red', alpha=0.5)
-plt.plot(dates, low, c= 'blue', alpha=0.5)
-plt.fill_between(dates, high, low, facecolor = 'blue', alpha = 0.1)
+plt.plot(dates, highs, c= 'red', alpha=0.5)
+plt.plot(dates, lows, c= 'blue', alpha=0.5)
+plt.fill_between(dates, highs, lows, facecolor = 'blue', alpha = 0.1)
 
 
 fig.autofmt_xdate()
@@ -58,11 +58,11 @@ plt.show()
 #subplot(row, column, index)/(2,1,1) creates two graphs on top of each other 
 #index starts at 1, not 0
 plt.subplot(2,1,1)
-plt.plot(dates, high, c='red')
+plt.plot(dates, highs, c='red')
 plt.title('Highs')
 
 plt.subplot(2,1,2)
-plt.plot(dates, low, c='blue')
+plt.plot(dates, lows, c='blue')
 plt.title('Lows')
 
 
@@ -70,4 +70,3 @@ plt.title('Lows')
 plt.suptitle("Highs and lows of Sitka Alaska")
 
 plt.show()
-'''
